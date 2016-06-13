@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils import timezone
-from website.models import Post, Select
+from website.models import Post
 from django.contrib.admin import AdminSite
 
 class adminLayout(admin.ModelAdmin):
