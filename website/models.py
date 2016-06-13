@@ -5,7 +5,7 @@ import datetime
 
 class Post(models.Model):
 	Title = models.CharField(max_length = 20)
-	Content = models.TextField
+	Content = models.TextField()
 	Created = models.DateTimeField('Created')
 
 	def __str__(self):

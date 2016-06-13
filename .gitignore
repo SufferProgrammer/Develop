@@ -2,3 +2,5 @@
 __pycache__
 *.json
 *.~
+
+database.sqlite3
