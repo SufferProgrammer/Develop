@@ -5,5 +5,5 @@ __pycache__
 *.py~
 *.html~
 *.save
-
+*.htm~
 *.sqlite3
