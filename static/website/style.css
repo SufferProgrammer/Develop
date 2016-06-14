@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 
+}
+
+body{
+    background-color: #34495e;
+}
+
+#header{
+    background: #e67e22;
+    padding: 35px;
+    position: center fixed;
+}
