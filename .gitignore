@@ -6,4 +6,4 @@ __pycache__
 *.html~
 *.save
 
-database.sqlite3
+*.sqlite3
