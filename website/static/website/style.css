@@ -1,15 +1,41 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+p{
+    text-align: justify;
 }
 
 body{
-    background-color: #34495e;
+    background-color: #5BC0EB;
 }
 
 #header{
-    background: #e67e22;
-    padding: 35px;
-    position: center fixed;
+    background: #FDE74C;
+    padding: 27px;
+    color: #9BC53D;
+    text-align: right;
 }
+
+#footer{
+    background: #FA7921;
+    padding: 30px;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer .footer-copyright{
+    float: right;
+}
+
+#wrapper{
+    padding: 45px;
+    margin: 0 auto;
+    width: 720px;
+}
+
