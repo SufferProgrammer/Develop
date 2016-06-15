@@ -18,82 +18,19 @@
     </div>
     <div id="wrapper">
         <div id="main-content">
-            <h2>
-                <a href="">
-                    First Post 
-                </a>
-            </h2>
-            <br>           
+            {% for post in post %}
+                 <br>
+                    <h2>
+                        <a href="">
+                            {{ post.Title}}
+                    </a>
+                <br>
+                </h2>
+                    {{ post.Content|linebreaks }}
+                <br>
+                    Created @ {{ post.Created }}
                 <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
-                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum 
-                    facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam 
-                    et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-                    consequatur aut perferendis doloribus asperiores repellat."
-                </p>
-            <br>
-               Posted on <em>January, 21st 2016</em>
-            <br>
-            <h2>
-                <a href="">
-                    Second Post 
-                </a>
-            </h2>
-            <br>           
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
-                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum 
-                    facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam 
-                    et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-                    consequatur aut perferendis doloribus asperiores repellat."
-                </p>
-            <br>
-               Posted on <em>January, 21st 2016</em>
-            <br>
-            <h2>
-                <a href="">
-                    Third Post 
-                </a>
-            </h2>
-            <br>           
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
-                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum 
-                    facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam 
-                    et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-                    consequatur aut perferendis doloribus asperiores repellat."
-                </p>
-            <br>
-               Posted on <em>January, 21st 2016</em>
-            <br>
-            <h2>
-                <a href="">
-                    Fourth Post 
-                </a>
-            </h2>
-            <br>           
-                <p>
-                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum 
-                    deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, 
-                    similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum 
-                    facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-                    id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam 
-                    et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias 
-                    consequatur aut perferendis doloribus asperiores repellat."
-                </p>
-            <br>
-               Posted on <em>January, 21st 2016</em>
-            <br>
+            {% endfor %}
         </div>
     </div>
     <div id="footer">
